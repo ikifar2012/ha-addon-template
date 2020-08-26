@@ -1,0 +1,24 @@
+{
+    "name": "Template",
+    "version": "1.0",
+    "slug": "template",
+    "description": "Template Add-on",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "services",
+    "boot": "auto",
+    "map": ["share:rw"],
+    "ports": {
+      "8123/tcp": 8123,
+      "25565/udp": 25565
+    },
+    "ports_description": {
+      "8123/tcp": "TCP Port",
+      "25565/udp": "UDP Port"
+    },
+    "options": {
+        "text":"Example"
+    },
+    "schema": {
+        "text": "str"
+    }
+  }
