@@ -10,14 +10,14 @@ trigger:
 pr: none
 
 pool:
-  name: 'Default'
+  # name: 'Default'
   vmImage: 'ubuntu-latest'
 
 steps:
 - script: |
     echo "${PWD}/$ADDON"
     ls -al ${PWD}/$ADDON
-    docker run --rm --privileged -v ~/.docker:/root/.docker -v ${PWD}/addon:/data -v /var/run/docker.sock:/var/run/docker.sock:ro homeassistant/amd64-builder --all -t /data --docker-user $DOCKERUSER --docker-password $DOCKERPASS
+    docker run --rm --privileged -v ~/.docker:/root/.docker -v ${PWD}/addon:/data -v /var/run/docker.sock:/var/run/docker.sock:ro homeassistant/amd64-builder --all --docker-user $DOCKERUSER --docker-password $DOCKERPASS -t /data 
   displayName: 'Build Add-on'
   env:
     DOCKERUSER: $(dockeruser)
