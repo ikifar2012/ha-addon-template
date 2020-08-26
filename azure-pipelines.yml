@@ -10,7 +10,7 @@ trigger:
 pr: none
 
 pool:
-  # name: 'Default'
+  name: 'Default'
   vmImage: 'ubuntu-latest'
 
 steps:
