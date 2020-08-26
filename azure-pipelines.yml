@@ -17,7 +17,7 @@ steps:
 - script: |
     echo "${PWD}/$ADDON"
     ls -al ${PWD}/$ADDON
-    docker run --rm --privileged -v ~/.docker:/root/.docker -v ${PWD}/addon:/data -v /var/run/docker.sock:/var/run/docker.sock:ro homeassistant/amd64-builder --all --docker-user $DOCKERUSER --docker-password $DOCKERPASS -t /data 
+    docker run --rm --privileged -v ~/.docker:/root/.docker -v ${PWD}/addon:/addondata -v /var/run/docker.sock:/var/run/docker.sock:ro homeassistant/amd64-builder --all --docker-user $DOCKERUSER --docker-password $DOCKERPASS -t //addondata 
   displayName: 'Build Add-on'
   env:
     DOCKERUSER: $(dockeruser)
