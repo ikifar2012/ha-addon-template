@@ -1,4 +1,4 @@
-# Remote Backup
+# Template Add-On
 This is a Template Repo
 # Installation
 This add-on can be added via my [Home Assistant Add-on repository](https://github.com/ikifar2012/ha-addons):
