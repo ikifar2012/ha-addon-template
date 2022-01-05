@@ -15,5 +15,5 @@ jobs:
           args: |
             --test \
             --all \
-            --target template \
+            --target template-addon \
             --docker-hub ikifar
