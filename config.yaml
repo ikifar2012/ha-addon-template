@@ -4,16 +4,16 @@ slug: template
 description: Template Add-on
 url: https://github.com/ikifar2012/ha-addon-template/blob/master/README.md
 arch:
-- armhf
-- armv7
-- aarch64
-- amd64
-- i386
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
 image: ikifar/ha-addon-template-{arch}
 startup: services
 boot: auto
 map:
-- share:rw
+  - share:rw
 ports:
   8123/tcp: 8123
   25565/udp: 25565
