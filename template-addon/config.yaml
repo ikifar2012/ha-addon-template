@@ -3,6 +3,7 @@ version: '1.0'
 slug: template
 description: Template Add-on
 url: https://github.com/ikifar2012/ha-addon-template/blob/master/README.md
+codenotary: cas@mathesonsteplock.ca
 arch:
   - armhf
   - armv7
